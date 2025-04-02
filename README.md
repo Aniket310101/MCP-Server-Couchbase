@@ -39,6 +39,7 @@ A Model Context Protocol (MCP) server that enables LLMs to interact directly wit
    ```
 
 3. **Claude Desktop Integration**
+
    Add this configuration to your Claude Desktop config file:
 
    **Windows**: `%APPDATA%/Claude/claude_desktop_config.json`  
@@ -83,6 +84,7 @@ A Model Context Protocol (MCP) server that enables LLMs to interact directly wit
    ```
 
 4. **Verify Connection**
+
    - Restart Claude Desktop
    - The Couchbase MCP server tools should now be available in your conversations
 
@@ -154,6 +156,6 @@ Here are some example interactions with Claude using the MCP server:
    Create a new user document with name "John Doe" and email "john@example.com"
    ```
 
-## 🤝 Contributing
+## 🤝 Contribution
 
 Contributions are welcome! Please feel free to submit a Pull Request.
