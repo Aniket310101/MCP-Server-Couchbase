@@ -1,6 +1,6 @@
 {
   "name": "@couchbasedatabase/couchbase-mcp",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "A Couchbase MCP server for LLMs",
   "repository": {
     "type": "git",
