@@ -24,6 +24,10 @@
   "bin": {
     "couchbase-mcp": "dist/bin/cli.js"
   },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "author": "aniket-purkayastha",
   "license": "MIT",
   "dependencies": {
