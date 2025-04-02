@@ -1,0 +1,32 @@
+name: PR Review Check
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+jobs:
+  check-review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check PR Review Status
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.payload.repository.owner.login;
+            const { data: reviews } = await github.rest.pulls.listReviews({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.payload.pull_request.number,
+            });
+            
+            const ownerApproval = reviews.some(review => 
+              review.user.login === owner && 
+              review.state === 'APPROVED'
+            );
+            
+            if (!ownerApproval) {
+              core.setFailed('This PR requires approval from the repository owner before it can be merged.');
+            }
+
+permissions:
+  pull-requests: read 
