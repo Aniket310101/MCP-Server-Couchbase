@@ -13,6 +13,15 @@ jobs:
         with:
           script: |
             const owner = context.payload.repository.owner.login;
+            const prAuthor = context.payload.pull_request.user.login;
+            
+            // If the PR author is the owner, automatically approve
+            if (prAuthor === owner) {
+              console.log('PR author is the repository owner - automatically approved');
+              return;
+            }
+            
+            // For non-owner PRs, check for owner's review
             const { data: reviews } = await github.rest.pulls.listReviews({
               owner: context.repo.owner,
               repo: context.repo.repo,
