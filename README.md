@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/aniket310101-mcp-server-couchbase-badge.png)](https://mseep.ai/app/aniket310101-mcp-server-couchbase)
+
 # 🗄️ Couchbase MCP Server for LLMs
 
 A Model Context Protocol (MCP) server that enables LLMs to interact directly with Couchbase databases on Capella clusters. Query buckets, perform CRUD operations, execute N1QL queries, and manage data seamlessly through natural language.
