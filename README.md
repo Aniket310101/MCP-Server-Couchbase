@@ -1,3 +1,4 @@
+[![Verified on MseeP](https://mseep.ai/badge.svg)](https://mseep.ai/app/69df67ac-e748-4b8d-954e-c98e632fd53f)
 [![MseeP.ai Security Assessment Badge](https://mseep.net/pr/aniket310101-mcp-server-couchbase-badge.png)](https://mseep.ai/app/aniket310101-mcp-server-couchbase)
 
 # 🗄️ Couchbase MCP Server for LLMs
